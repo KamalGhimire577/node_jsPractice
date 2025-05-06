@@ -1,0 +1,25 @@
+{
+  "name": "node_final",
+  "version": "1.0.0",
+  "description": "node js application",
+  "main": "app.js",
+  "scripts": {
+    "start": "node --watch app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KamalGhimire577/node_jsPractice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KamalGhimire577/node_jsPractice/issues"
+  },
+  "homepage": "https://github.com/KamalGhimire577/node_jsPractice#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "sequelize": "^6.37.7",
+    "pg": "^8.15.6"
+    
+  }
+}
