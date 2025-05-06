@@ -1,1 +1,18 @@
-/node_modules
+# Node.js
+node_modules/
+.env
+.DS_Store
+
+# Logs
+logs
+*.log
+
+# OS and Editor files
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# Build artifacts
+dist/
+build/
