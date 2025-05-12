@@ -4,8 +4,8 @@ const { Sequelize, DataTypes } = require("sequelize");
 //const bookModel = require("c:/Users/Acer/Desktop/node_final/database/models/BookModel");
 
 const sequelize = new Sequelize(
-  "postgres://postgres.halgmviyjtjtjemvufpf:kexatwketaketiho@aws-0-ap-south-1.pooler.supabase.com:6543/postgres",
- 
+  "postgresql://postgres.poayaymgjrtbrezycsji:kamal12345ghimire@aws-0-ap-south-1.pooler.supabase.com:6543/postgres",
+
   {
     dialect: "postgres",
     protocol: "postgres",
@@ -24,7 +24,8 @@ sequelize
 const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
-module.exports = db
+db.books = require("./models/BookModel")(sequelize, DataTypes);
+db.user =require("./models/userModel")(sequelize,DataTypes);
 //db.books = bookModel(sequelize, DataTypes);
 //db.user = User(sequelize, DataTypes);
 //db.product = productModel(sequelize, DataTypes);
@@ -33,5 +34,8 @@ module.exports = db
 //sequelize.sync({ alter: false }).then(() => {
   //console.log("Migratin succssfylly!");
 //});
+sequelize.sync({force : false}).then(()=>{
+  console.log("migrate vayo hai tw")
+})
 
 module.exports = db;

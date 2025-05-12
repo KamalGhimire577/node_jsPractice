@@ -2,15 +2,15 @@ const { DataTypes } = require("sequelize"); // Fix this line
 
 const bookModel = (sequelize, DataTypes) => {
   const book = sequelize.define("book", {
-    book_name: {
+    bookName: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    bookprice: {
+    bookPrice: {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    book_author: {
+    bookAuthor: {
       type: DataTypes.STRING,
       allowNull: false,
       defaultValue: "unknown",
