@@ -34,7 +34,7 @@ db.user =require("./models/userModel")(sequelize,DataTypes);
 //sequelize.sync({ alter: false }).then(() => {
   //console.log("Migratin succssfylly!");
 //});
-sequelize.sync({force : false}).then(()=>{
+sequelize.sync({alter : false}).then(()=>{
   console.log("migrate vayo hai tw")
 })
 

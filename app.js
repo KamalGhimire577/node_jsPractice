@@ -16,8 +16,8 @@ app.use(
 app.use(express.json());
 
 // Routes
-app.use("/api/book", bookRoutes); // ✅ Pass router directly
-
+//app.use("/api/book", bookRoutes); // ✅ Pass router directly
+app.use("/api/book",bookRoutes);
 // Start server
 const port = 5000;
 app.listen(port, () => {

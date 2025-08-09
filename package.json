@@ -17,9 +17,9 @@
   },
   "homepage": "https://github.com/KamalGhimire577/node_jsPractice#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^5.1.0",
-    "sequelize": "^6.37.7",
-    "pg": "^8.15.6"
-    
+    "pg": "^8.15.6",
+    "sequelize": "^6.37.7"
   }
 }
